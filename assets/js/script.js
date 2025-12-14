@@ -257,7 +257,7 @@ function validerReponse() {
   ) {
     bruitMauvaiseReponse.play();
 
-    minuterie -= 10;
+    minuterie -= 3;
   }
 }
 
