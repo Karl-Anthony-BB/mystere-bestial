@@ -257,7 +257,7 @@ function validerReponse() {
   ) {
     bruitMauvaiseReponse.play();
 
-    minuterie -= 3;
+    minuterie -= 6;
   }
 }
 
@@ -485,6 +485,15 @@ function dessinerFin() {
     `Score: ${nScore}`,
     nLargeurCanvas / 2,
     nHauteurCanvas / 2
+  );
+
+  // REDEMARRER
+  oContexte.font = "50px SuperJoyful";
+  oContexte.textAlign = "center";
+  oContexte.fillText(
+    "Appuyer ctrl + R pour recommencer",
+    nLargeurCanvas / 2,
+    nHauteurCanvas / 2 + 200
   );
 }
 
